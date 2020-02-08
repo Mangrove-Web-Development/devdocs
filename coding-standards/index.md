@@ -1,3 +1,7 @@
+---
+nav_order: 2
+title: Coding Standards
+---
 # Mangrove Coding Standards
 
 The purpose of the Mangrove Coding Standards is to create a baseline for
