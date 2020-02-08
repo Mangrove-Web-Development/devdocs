@@ -1,3 +1,7 @@
+---
+parent: Coding Standards
+---
+
 # PHP Coding Standards
 
 ## Avoid Code Noise

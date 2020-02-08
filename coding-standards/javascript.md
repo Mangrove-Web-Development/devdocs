@@ -1,3 +1,7 @@
+---
+parent: Coding Standards
+---
+
 # JavaScript Coding Standards
 
 ## Blocks and Curly Braces
