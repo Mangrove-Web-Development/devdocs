@@ -1,3 +1,6 @@
+---
+nav_order: 4
+---
 # WordPress Plugins
 
 - Mangrove Custom

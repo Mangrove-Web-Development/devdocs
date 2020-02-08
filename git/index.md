@@ -1,3 +1,7 @@
+---
+nav_order: 3
+title: Using Git
+---
 # Using Git
 
 ## Making it Easier

@@ -1,4 +1,9 @@
-# Mangrove CSS / Sass Styleguide - WORK IN PROGRESS - THIS IS COPIED FROM AIRBNB AS A GUIDE
+---
+title: CSS/SASS
+---
+# CSS / Sass
+
+# WORK IN PROGRESS - THIS IS COPIED FROM AIRBNB AS A GUIDE
 
 *A mostly reasonable approach to CSS and Sass*
 

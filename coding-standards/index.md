@@ -1,6 +1,7 @@
 ---
 nav_order: 2
 title: Coding Standards
+has_children: true
 ---
 # Mangrove Coding Standards
 
