@@ -4,14 +4,7 @@ title: Using Git
 ---
 # Using Git
 
-## Making it Easier
-Git is very confusing, so feel free to ask other devs about it when something
-doesn't make sense. Also, GUI software can make things easier:
-
-* [Fork](https://git-fork.com/) (Mac/Windows)
-* [SourceTree](https://www.sourcetreeapp.com/) (Mac/Windows)
-* [GitUp](https://gitup.co/) (Mac)
-* [Tower](https://www.git-tower.com/mac) (Mac)
+Git can be very confusing, so feel free to ask other devs about it when something doesn't make sense.
 
 ## Merging Code
 Code should be merged using the `git merge` feature. Merging can often be a

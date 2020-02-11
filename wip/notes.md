@@ -1,7 +1,7 @@
 ---
 title: WIP Notes
 nav_order: 10
-parent: Coding Standards
+parent: WIP Notes
 ---
 
 # Note for Future Content
