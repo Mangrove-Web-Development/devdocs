@@ -1,5 +1,5 @@
 ---
-nav_order: 3
+nav_order: 2
 title: Developer Tools
 ---
 Install these tools before you get started.

@@ -1,6 +1,6 @@
 ---
 title: Home
-nav_order: 1
+nav_order: 0
 ---
 # Developer Documentation
 Welcome to the Mangrove Web Development Developer Documentation.
