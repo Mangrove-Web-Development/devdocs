@@ -20,6 +20,3 @@ We highly recommend using a Git GUI client, as this makes it much easier to unde
 
 ## Docker
 Docker is used for the local development environment. Download and install [Docker Desktop](https://www.docker.com/get-started).
-
-## WIP
-Should LastPass, and Slack be documented here?
