@@ -2,6 +2,7 @@
 nav_order: 2
 title: Developer Tools
 ---
+# Developer Tools
 Install these tools before you get started.
 
 ## EditorConfig
