@@ -7,11 +7,9 @@ has_children: true
 To work on a project, you will need SFTP, git push, and WP-Admin access.
 
 ## SSH Public Key
-Add your SSH public key, **not the private key**, to the [Git Keys document](https://docs.google.com/document/d/18f2wRxvz3h4fRB6XDwiAOWtG9yAR9olstZruN3ppMRY), and let your Mangrove contact know it's there so they can add it to WPEngine.
+Add your SSH public key, **not the private key**, to the [SSH Keys document](https://docs.google.com/document/d/18f2wRxvz3h4fRB6XDwiAOWtG9yAR9olstZruN3ppMRY), and let your Mangrove contact know it's there so they can [add it to WPEngine](wpe-add-git-key).
 
 If you don't yet have a public key, see the documentation on [generating an SSH key](generate-ssh-key).
-
-[WIP] Add documentation for Mangrove admin to add key to `mangrove` install first.
 
 ## WPEngine
 Log in to [my.wpengine.com](https://my.wpengine.com/). A Mangrove administrator should already have given you access the sites for you to work on. Sites are listed under various accounts, so if you don't see it at your my.wpengine.com home screen, you may need to use the "switch account" link.
