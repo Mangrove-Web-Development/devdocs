@@ -1,5 +1,5 @@
 ---
-parent: access
+parent: Access
 title: Generate an SSH Key
 nav_order: 1
 ---

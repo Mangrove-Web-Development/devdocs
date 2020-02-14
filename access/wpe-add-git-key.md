@@ -1,6 +1,7 @@
 ---
 title: Add a WPE Git Push Key
 nav_order: 2
+parent: Access
 ---
 
 # SSH Keys for Git Push
