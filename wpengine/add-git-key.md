@@ -1,7 +1,7 @@
 ---
 title: Add a WPE Git Push Key
-nav_order: 2
-parent: Access
+nav_order: 1
+parent: WPEngine
 ---
 
 # SSH Keys for Git Push

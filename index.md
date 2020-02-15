@@ -15,4 +15,5 @@ If you're getting setup for the first time, we recommend you start in this order
 1. Install the [Developer Tools](/developer-tools).
 1. Read the [Coding Standards](/coding-standards).
 1. Get [access](/access) to your first project.
+1. Read the [introduction to WPEngine](/wpengine)
 1. Start [local development](/local-development).
