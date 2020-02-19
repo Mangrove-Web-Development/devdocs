@@ -1,6 +1,7 @@
 ---
 title: WPEngine
 nav_order: 4
+has_children: true
 ---
 # Introduction to WPEngine
 Log in to [my.wpengine.com](https://my.wpengine.com/). A Mangrove administrator should already have given you access the sites for you to work on. Sites are listed under various accounts, so if you don't see it at your my.wpengine.com home screen, you may need to use the "switch account" link.
@@ -12,3 +13,9 @@ On WPEngine, each site has one or more environments. Each of these is a complete
 
 ## Legacy Staging
 Before the current environments system, WPEngine had a "1-Click Staging" system. This is now a legacy system which we no longer use, with some exceptions on older projects. Do not use the legacy staging system, but be aware that it still exists within WPEngine and be careful not to get it confused with the staging environment.
+
+## Git Deploy
+[WIP] Add details about how WPE Git Deploy works.
+- Any branch pushed gets deployed.
+- `master` is main branch.
+- Always push `master` first to a new repository.
