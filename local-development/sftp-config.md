@@ -7,10 +7,19 @@ Create a text file at `docker-compose/sftp-config` (no file extension) with the 
 
 
 ```sh
-HOSTNAME=
-USERNAME=
-PASSWORD=''
+ENV=STAGE
+if [ $ENV = PROD ]; then
+  HOSTNAME=
+  USERNAME=
+  PASSWORD=''
+elif [ $ENV = STAGE ]; then
+  HOSTNAME=
+  USERNAME=
+  PASSWORD=''
+fi
 PORT=2222
 ```
 
-Note: place password in `'single quotes'` to avoid issues with special characters
+This text file is a shell script. You can switch between different credentials in the file by changing the `ENV` variable accordingly.
+
+The password is in `'single quotes'` to avoid issues with special characters.
