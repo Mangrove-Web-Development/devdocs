@@ -18,4 +18,4 @@ Go through the WordPress install process on localhost. The values you enter in t
 http://localhost
 ![WordPress install screen with dummy data](wp-install.png)
 
-Now that WordPress is installed, you can [download the plugins and site data](download).
+Now that WordPress is installed, you can [download the plugins and site data](sync).
