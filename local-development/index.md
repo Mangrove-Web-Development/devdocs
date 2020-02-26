@@ -2,6 +2,7 @@
 nav_order: 5
 title: Local Development
 has_children: true
+has_toc: false
 ---
 # Local Development
 To start local development:

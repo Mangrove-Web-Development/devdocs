@@ -1,5 +1,5 @@
 ---
-title: Download Site
+title: Sync Site Data
 parent: Local Development
 ---
 

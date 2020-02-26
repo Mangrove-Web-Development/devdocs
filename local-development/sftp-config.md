@@ -23,3 +23,5 @@ PORT=2222
 This text file is a shell script. You can switch between different credentials in the file by changing the `ENV` variable accordingly.
 
 The password is in `'single quotes'` to avoid issues with special characters.
+
+Next step: [Start Local WordPress](/local-development/start-wordpress)

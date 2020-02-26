@@ -39,3 +39,5 @@ Now `git fetch --all` to see the latest branches on both remotes.
 Your Git GUI should now show both remotes and remote branches, something like this:
 
 ![Git GUI showing prod and stage remotes](git-remotes.png)
+
+Next step: [Add SFTP Config](/local-development/sftp-config)
