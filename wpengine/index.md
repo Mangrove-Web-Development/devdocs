@@ -19,3 +19,5 @@ Before the current environments system, WPEngine had a "1-Click Staging" system.
 Each WordPress install on WPEngine has a corresponding Git repository.
 - *Any* branch pushed to this repository gets deployed to that install, so we generally only push the `master` branch.
 - The first branch pushed to a WPE Git repository can never be removed, so if you are initializing a new install, _make sure to push the `master` branch first_.
+
+Next step: [Local Development](/local-development)
