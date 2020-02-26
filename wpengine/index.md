@@ -13,7 +13,7 @@ On WPEngine, each site has one or more environments. Each of these is a complete
 ![Annotated screenshot showing WPE environments](wpe-environments-annotated.png)
 
 ## Legacy Staging
-Before the current environments system, WPEngine had a "1-Click Staging" system. This is now a legacy system which we no longer use, with some exceptions on older projects. Do not use the legacy staging system, but be aware that it still exists within WPEngine and be careful not to get it confused with the staging environment.
+Before the current environments system, WPEngine had a "1-Click Staging" system. This is now a legacy system which we no longer use. Do not use the legacy staging system, but be aware that it still exists within WPEngine and be careful not to get it confused with the staging environment.
 
 ## Git Deploy
 Each WordPress install on WPEngine has a corresponding Git repository.
