@@ -33,7 +33,6 @@ if( $case ):
 endif; ?>
 ```
 
-
 ## Indentation
 [WIP] This section should probably be moved to the general standards doc.
 
@@ -63,8 +62,6 @@ tags.
   ?>
 </div>
 ```
-
-[WIP] These "Good" examples need team review. I generally prefer (#1). -- Jonathan
 
 **Good**
 ```php

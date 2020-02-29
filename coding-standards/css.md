@@ -121,6 +121,8 @@ Finally, properties are what give the selected elements of a rule declaration th
 
 ### OOCSS and BEM
 
+[WIP] Remove parts about OOCSS - we're only using BEM?
+
 We encourage some combination of OOCSS and BEM for these reasons:
 
 * It helps create clear, strict relationships between CSS and HTML

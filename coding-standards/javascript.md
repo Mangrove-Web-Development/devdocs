@@ -44,7 +44,7 @@ Just make sure your `add_action()` call is before `wp_head()` if the script shou
 In early versions of WP, scripts could not be enqueued after wp_head().  Since version 3.3, scripts can be loaded after wp_head(), as long as they are registered to be enqueued in wp_footer().
 
 ## Inline Scripts
-See https://developer.wordpress.org/reference/functions/wp_add_inline_script/
+See [wp_add_inline_script()](https://developer.wordpress.org/reference/functions/wp_add_inline_script/).
 
 ## Bootstrap
 If the Bootstrap data attribute API is used, bootstrap.js should be enqueued directly.
@@ -60,7 +60,7 @@ Gulp is setup to detect what modernizr tests are being used by files in /library
 
 
 ## IIFE
-NOTE: This does not apply to ES6, as the module structure provides encapsulation.
+NOTE: This does not apply to ES6, as the module structure provides encapsulation. Only do this if you are not using a JavaScript compiler.
 
 JavaScript scripts should be wrapped in an immediately invoked function expression, like this:
 
