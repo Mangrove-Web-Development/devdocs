@@ -1,6 +1,7 @@
 ---
 title: Sync Site Data
 parent: Local Development
+nav_order: 4
 ---
 
 # Sync Site Files and Database

@@ -1,6 +1,7 @@
 ---
 title: Start WordPress
 parent: Local Development
+nav_order: 3
 ---
 # Start WordPress
 

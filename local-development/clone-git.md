@@ -1,6 +1,7 @@
 ---
 title: Setup Git
 parent: Local Development
+nav_order: 1
 ---
 ## Git
 Make sure your Git Push user is already set up, as shown in the [access documentation](/access).
