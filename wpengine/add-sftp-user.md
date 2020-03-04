@@ -1,6 +1,7 @@
 ---
 title: Add SFTP User
 parent: WPEngine
+nav_order: 2
 ---
 
 # Create an SFTP User
