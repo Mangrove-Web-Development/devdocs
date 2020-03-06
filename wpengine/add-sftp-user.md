@@ -25,12 +25,17 @@ My WPEngine > Select environment > “SFTP Logins” > “Add SFTP user”
 * Enter credentials in the note in this format:
 
 ```sh
-ENV=STAGE
+ENV=DEV
+
 if [ $ENV = PROD ]; then
   HOSTNAME=
   USERNAME=
   PASSWORD=''
 elif [ $ENV = STAGE ]; then
+  HOSTNAME=
+  USERNAME=
+  PASSWORD=''
+elif [ $ENV = DEV ]; then
   HOSTNAME=
   USERNAME=
   PASSWORD=''
