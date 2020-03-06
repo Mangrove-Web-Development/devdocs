@@ -15,19 +15,27 @@ To enter the Util container:
 docker-compose run util
 ```
 
-Available commands within Util:
-
-```bash
+These commands work for both single and Multisite installs.
+```sh
 download-plugins
 download-uploads
 download-db
-import-db
 exit
 ```
 
 `exit` will exit the container and bring you back to your normal terminal.
 
 The `download` commands require the [SFTP config file](sftp-config).
+
+## Single Site WordPress
+```sh
+import-db
+```
+
+## Multisite
+```sh
+multisite-import-db
+```
 
 ## Alternatives
 [WIP] Site files can also be downloaded and imported manually with any SFTP client. Migrate DB Pro can also be used.
