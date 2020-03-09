@@ -37,5 +37,15 @@ import-db
 multisite-import-db
 ```
 
+You may get this error in WP-Admin:
+```
+wp_check_site_meta_support_prefilter was called incorrectly.
+```
+In that case, within the Util container:
+
+```sh
+wp --allow-root network meta set 1 site_meta_supported 1
+```
+
 ## Alternatives
 [WIP] Site files can also be downloaded and imported manually with any SFTP client. Migrate DB Pro can also be used.
