@@ -44,14 +44,12 @@ npm run commandname
 For convenience, some commands have aliases that can be used interchangeably. E.g. `npm run dev` and `npm run develop` do the same thing.
 
 
-build
-production
-: Compiles SASS and JavaScript for production use. Run this command and commit output files before any production deploys.
-
-`watch`
-: Use this instead of `develop` if you are on Windows. Windows does not report file change like Mac and other Unix-like systems do, so polling is used instead for compatibility.
-
-`dev`
-`develop`
-: Watches source SCSS and JavaScript files for changes and compiles for development.  
+- `build`
+- `production`
+    - Compiles SASS and JavaScript for production use. Run this command and commit output files before any production deploys.
+- `watch`
+    - Use this instead of `develop` if you are on Windows. Windows does not report file change like Mac and other Unix-like systems do, so polling is used instead for compatibility.
+- `dev`
+- `develop`
+    - Watches source SCSS and JavaScript files for changes and compiles for development.  
     When changes are detected, files are recompiled and the browser is automatically refreshed.
