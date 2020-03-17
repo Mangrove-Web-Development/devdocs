@@ -14,6 +14,45 @@ title: MGTemplate
 - Doesn't track WordPress files.
 - How to edit CSS/JS
 
+
+## Theme Scripts
+All `*.js` files in the `js` directory of themes based on _mgstarter will have a corresponding output file in the `dist` directory. To use these scripts in WordPress, they must be registered, and then enqueued.
+
+Note: only scripts in the `js` directory will be output separately. Files in subdirectories of `js` will not be output.
+
+E.g.:
+```sh
+js/global.js                       # Outputs to dist/global.hash.js.
+js/example.js                      # Outputs to dist/example.hash.js.
+js/example-helpers/first-helper.js # Does not output to dist.
+```
+
+### Register Scripts
+
+Register scripts using the `register` method of the `Script_Registry` abstract class[^1].
+
+```php
+<?php
+Script_Registry::register( $handle, $dependencies, $options );
+?>
+```
+
+`Script_Registry::register` takes three arguments:
+* `$handle` - `(string)` Handle for script.
+    Must match the filename of the source file, excluding the `.js` file extension.
+    Used to enqueue or add script as dependency.
+* `$dependencies` - `(array)` Optional. Array script handles this script depends on.
+    Defaults to empty array.
+* `$options` - `(array)` Optional. Allows overriding arguments sent to [wp_register_script](https://developer.wordpress.org/reference/functions/wp_register_script/).
+    * `src` - `(string|bool)` Defaults to compiled JS file in `dist` directory corresponding to `$handle`.
+    * `version` - `(string|bool|null)` Version number is not needed for cache-busting due to hashed file names.
+         Default `null`.
+    * `in_footer` - `(bool)` Whenever possible, scripts should be enqueued in the footer.
+         Default `true`.
+
+[^1]: [WIP] Link to PHP abstract class explanation. [PHP Docs](https://www.php.net/manual/en/language.oop5.abstract.php)
+
+
 ## Animations
 
 Our theme utilizes [sal.js](https://github.com/mciastek/sal) as a lightweight scroll animation library. Using this, you can easily add various on-scroll animations with options for type, duration, delay, and easing. For example, the title, text, and button elements within our hero building block (seen in action [here](http://mgtemplate.wpengine.com/)) use these shared settings: `data-sal="slide-up" data-sal-duration="400" data-sal-easing="ease-out"`, while each subsequent element uses a slighly larger `data-sal-delay` (between 300-700) to create a staggered slide-up effect. Please refer to the [documentation](https://github.com/mciastek/sal) for full usage options.
