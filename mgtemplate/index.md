@@ -29,11 +29,16 @@ js/example-helpers/first-helper.js # Does not output to dist.
 
 ### Register Scripts
 
-Register scripts using the `register` method of the `Script_Registry` abstract class[^1].
+Register scripts in the `js` directory in the `register_scripts` function in `functions.php`.
+Use the `register` method of the `Script_Registry` abstract class[^1].
 
 ```php
 <?php
-Script_Registry::register( $handle, $dependencies, $options );
+function register_scripts() {
+    ...
+    Script_Registry::register( $handle, $dependencies, $options );
+    ...
+}
 ?>
 ```
 
@@ -52,6 +57,40 @@ Script_Registry::register( $handle, $dependencies, $options );
 
 [^1]: [WIP] Link to PHP abstract class explanation. [PHP Docs](https://www.php.net/manual/en/language.oop5.abstract.php)
 
+### Webpack External Scripts
+Most dependency scripts will either be node modules managed with npm,
+or custom scripts within the theme `js` directory.
+These can simply be included by using the `import` syntax in the main JavaScript files, and
+they will be included the the output bundles in `dist`.
+This is the preferred method to include dependencies, however,
+there are instances when a dependency can or should not be bundled.
+For example, many plugins rely on jQuery, and attempting to bundle jQuery can cause issues.
+
+In this case, the script must be added to the [`externals`](https://webpack.js.org/configuration/externals/) object in `webpack.config.js`.
+Then, the script must be registered with WordPress.
+If it's included in WordPress by default, it is already registered.
+Otherwise, use `Script_Registry::register` or `wp_register_script`.
+Then, you can add it to the `$dependencies` array of the dependent scripts and
+`import` it as if it was a node module.
+
+E.g. jQuery [^1]
+```js
+// webpack.config.js
+externals: {
+  jquery: "jQuery",
+},
+```
+```php
+<?php // functions.php
+Script_Registry::register( 'jquery', [], ['src'=>''] );
+Script_Registry::register( 'global' );
+```
+```js
+// global.js
+import $ from 'jquery'
+
+```
+[^1]: This is a somewhat contrived example. jQuery is already 
 
 ## Animations
 
