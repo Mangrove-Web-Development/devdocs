@@ -82,7 +82,7 @@ externals: {
 ```
 ```php
 <?php // functions.php
-Script_Registry::register( 'jquery', [], ['src'=>''] );
+Script_Registry::register( 'jquery', [], ['src'=>'//url/to/jquery.js'] );
 Script_Registry::register( 'global' );
 ```
 ```js
@@ -90,7 +90,29 @@ Script_Registry::register( 'global' );
 import $ from 'jquery'
 
 ```
-[^1]: This is a somewhat contrived example. jQuery is already 
+[^1]: This is a somewhat contrived example.
+    jQuery is already registered by WordPress, so there is no need to register it again as shown in this example.
+
+### Script Commons
+When multiple scripts `import` the same module(s),
+those modules will be output to the `commmons` JavaScript file.
+If it exists, the `Script_Registry` class will automatically add it as a dependency, so
+normally, you don't have to worry about this.
+However, if you import modules that require an _external script_,
+you need to add that external script to the `commons_requires` dependency array.
+
+As jQuery is very commonly used, it is included in $commons_requires by default in _mgstarter.
+If you know jQuery is not needed by any imported modules,
+you should remove it from this dependency array.
+
+```php
+<?php // functions.php
+function register_scripts(){
+  ...
+  Script_Registry::$commons_requires = ['jquery'];
+  ...
+}
+```
 
 ## Animations
 
