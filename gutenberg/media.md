@@ -14,11 +14,11 @@ This can be placed inside both the block component and/or within the InspectorCo
 
 `MediaUpload` uses a `render` property instead of rendering its children.
 This provides the `open` function, which opens the media library modal.
-Again you can use this anywhere in your block component - in or outside the InspectorControls.
+Again you can use this anywhere in your block component - within or outside the `InspectorControls`.
 When the media is selected, `onSelect` will be called, passing an object with all the media details.
 I recommend you save just the ID of your media file as an attribute.
 
-```js
+```jsx
 // src/example/index.js
 import {
   InspectorControls,
@@ -85,6 +85,7 @@ function Inspector( { saveImage } ){
   )
 }
 ```
+![Example block showing the image ID of the selected image file.](save-media-id.png)
 
 You may have noticed that the above code saves and displays the image ID,
 but it doesn't actually display the image!
