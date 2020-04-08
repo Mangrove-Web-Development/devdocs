@@ -1,6 +1,7 @@
 ---
 parent: Gutenberg
 title: Inspector Controls
+nav_order: 2
 ---
 
 # Inspector Controls

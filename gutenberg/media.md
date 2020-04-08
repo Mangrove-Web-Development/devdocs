@@ -1,6 +1,7 @@
 ---
 parent: Gutenberg
 title: Media
+nav_order: 3
 ---
 
 # Media
