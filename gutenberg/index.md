@@ -2,6 +2,7 @@
 nav_order: 7
 title: Gutenberg
 has_children: true
+has_toc: false
 ---
 # Gutenberg
 
