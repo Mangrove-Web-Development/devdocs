@@ -1,8 +1,16 @@
 ---
 nav_order: 7
 title: Gutenberg
+has_children: true
 ---
 # Gutenberg
+
+To take advantage of JavaScript developer tools, make sure to set `SCRIPT_DEBUG` in `wp-config.php`.
+
+```php
+<?php
+define('SCRIPT_DEBUG', true );
+```
 
 ## Attributes
 
