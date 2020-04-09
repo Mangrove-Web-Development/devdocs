@@ -92,12 +92,6 @@ function Inspector( { saveImage } ){
 ```
 ![Example block showing the image ID of the selected image file.](save-media-id.png)
 
-You may have noticed that the above code saves and displays the image ID,
-but it doesn't actually display the image!
-This is an AJAX call to the WP JSON API, which means you're going to have to use the `useEffect`
-React hook to deal with the asynchronous data fetching.
-
-
 ## Displaying Images
 Since you only save the ID,
 you have to fetch the rest of the image data when you render the component with `apiFetch`.
@@ -133,3 +127,4 @@ function EditorBlock( { image } ){
     <p>{`The data for image ${image} is loading.`}</p>
   )
 }
+```
