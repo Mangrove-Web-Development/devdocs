@@ -15,7 +15,7 @@ many times, it will be easier to add block settings in the block inspector.
 ## The InspectorControls Component
 To add to the block inspector, add the InspectorControls component to your block component.
 
-```js
+```jsx
 // src/example/index.js
 import { InspectorControls } from '@wordpress/block-editor'
 
@@ -37,7 +37,7 @@ export default function Example( props ){
 ## Panels
 Use the `Panel` component to organize your inspector content.
 
-```js
+```jsx
 // src/example/index.js
 import { InspectorControls } from '@wordpress/block-editor'
 import { PanelBody, PanelRow } from '@wordpress/components'
@@ -65,3 +65,5 @@ export default function Example( props ){
 }
 ```
 ![Screenshot of editor with panels in block inspector.](panels.png)
+
+Next, learn how to [handle media](/gutenberg/media).

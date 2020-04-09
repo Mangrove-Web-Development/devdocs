@@ -7,16 +7,21 @@ nav_order: 3
 # Media
 Use the `MediaUploadCheck` and `MediaUpload` components for handling attached media in custom blocks.
 
+## Selecting Media
 `MediaUploadCheck` checks whether the logged in user has permission to upload media.
 If so, the component children are rendered.
 Otherwise, the `fallback` is rendered.
 This can be placed inside both the block component and/or within the InspectorControls.
 
-`MediaUpload` uses a `render` property instead of rendering its children.
+[MediaUpload](https://github.com/WordPress/gutenberg/blob/master/packages/block-editor/src/components/media-upload/README.md) uses a `render` property instead of rendering its children.
 This provides the `open` function, which opens the media library modal.
-Again you can use this anywhere in your block component - within or outside the `InspectorControls`.
+Again, you can use this anywhere in your block component -
+within or outside the `InspectorControls`.
+Make sure it's inside the `MediaUploadCheck` component, though.
 When the media is selected, `onSelect` will be called, passing an object with all the media details.
 I recommend you save just the ID of your media file as an attribute.
+Also, you probably only want to allow certain types of media.
+`allowedTypes` takes and array of acceptable mime types.
 
 ```jsx
 // src/example/index.js
@@ -89,9 +94,42 @@ function Inspector( { saveImage } ){
 
 You may have noticed that the above code saves and displays the image ID,
 but it doesn't actually display the image!
-Since you only save the ID,
-you have to fetch the rest of the image data when you render the component with `apiFetch`.
 This is an AJAX call to the WP JSON API, which means you're going to have to use the `useEffect`
 React hook to deal with the asynchronous data fetching.
 
-I will show you how to do this. Better yet, I might make a reusable component that handles this for you; we'll see. But not now. I need to get away from the computer now.
+
+## Displaying Images
+Since you only save the ID,
+you have to fetch the rest of the image data when you render the component with `apiFetch`.
+
+```jsx
+// src/example/index.js
+import { useState, useEffect } from '@wordpress/element' // Instead of importing from 'react'.
+import apiFetch from '@wordpress/api-fetch'
+
+...
+
+function EditorBlock( { image } ){
+  const [ imageData, setImageData ] = useState( null )
+  useEffect(
+    () => {
+      // Note: this callback cannot be an async function,
+      // but you can still make asynchronous calls as long as you don't use the
+      // `await` keyword.
+      apiFetch( { path: `/wp/v2/media/${image}`} ).then(
+        data => { setImageData( data ) }
+      )
+    },
+    [image] // Only call callback when image has changed.
+  )
+  return(
+    imageData ?
+    <figure>
+      <img src={ imageData.source_url } alt={ imageData.alt_text } />
+      <figcaption>
+        <p>{`The image ID is ${image}`}</p>
+      </figcaption>
+    </figure> :
+    <p>{`The data for image ${image} is loading.`}</p>
+  )
+}

@@ -11,7 +11,7 @@ Gutenberg blocks use _attributes_ to save data.
 ## Declaring
 Attributes must be declared in the `registerBlockType` function call.
 
-```js
+```jsx
 // src/index.js
 registerBlockType( 'mangrove/example', {
   title: 'Basic Example',
@@ -37,7 +37,7 @@ The attribute type must be declared. [Valid types](https://developer.wordpress.o
 ## Accessing
 The block component will receive an attributes object as one of the props.
 
-```js
+```jsx
 // src/example/index.js
 export default function Example( props ){
   const { attributes: { renderCount } } = props
@@ -49,7 +49,7 @@ export default function Example( props ){
 Use setAttributes to update attributes. This will save the changes when the post is saved.
 Make sure you use the attribute name exactly as declared in `registerBlockType`, or it won't save.
 
-```js
+```jsx
 // src/example/index.js
 export default function Example( props ){
   const {
