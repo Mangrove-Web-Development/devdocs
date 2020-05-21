@@ -14,3 +14,7 @@ contact Jonathan about setting up a Docker Hub user with membership to this orga
 
 Docker images are built from public repositories in the
 [Mangrove-Web-Development GitHub team](https://github.com/Mangrove-Web-Development).
+
+## Update Docker Compose File
+Some projects may still have `rubidot/wp-util` in the `docker-compose.yml` file.
+This should be updated to `mangroveweb/wp-util`.
