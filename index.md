@@ -6,7 +6,7 @@ nav_order: 0
 Welcome to the Mangrove Web Development Developer Documentation.
 
 You should have a Mangrove admin or developer buddy to support you with setting up and make sure you have access to everything you need to get started.
-If you don't know who that is, contact [support@mangove-web.com](mailto:support@mangrove-web.com).
+If you don't know who that is, contact [support@mangrove-web.com](mailto:support@mangrove-web.com).
 
 This documentation is a work in progress. Incomplete portions and notes about the progress of this document will be marked with [WIP].
 
