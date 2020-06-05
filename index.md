@@ -12,7 +12,7 @@ This documentation is a work in progress. Incomplete portions and notes about th
 
 If you're getting setup for the first time, we recommend you start in this order:
 
-1. Install the [Developer Tools](/developer-tools).
+1. Install the [Required Software](/software).
 1. Read the [Coding Standards](/coding-standards).
 1. Get [access](/access) to your first project.
 1. Read the [introduction to WPEngine](/wpengine)
