@@ -20,7 +20,7 @@ installs them so your browsers trust them.
 
 
 **!!!MAC ONLY!!!**  
-I have not yet tested this for Windows.
+Contact Jonathan about this for Windows.
 
 Install [mkcert](https://mkcert.dev/).
 
