@@ -13,7 +13,7 @@ It can take some time to start up, especially on the first run.
 
 # Initialize WordPress
 You can use the Util container to Initialize either a single-site or Multisite WordPress install.
-Alternatively, you can also just use the WordPress installer at localhost.
+Alternatively, you can also just use the WordPress installer at [localhost](http://localhost).
 
 ## Single Site
 To initialize a single site at [http://localhost](http://localhost):

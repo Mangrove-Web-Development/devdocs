@@ -5,7 +5,6 @@ nav_order: 4
 ---
 
 # Sync Site Files and Database
-This must be done _after_ you [Install WordPress](start-wordpress).
 
 ## The Util Container
 The simplest way to sync down a site is with the command line tools in the Util container.
