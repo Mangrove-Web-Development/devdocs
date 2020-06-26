@@ -10,7 +10,7 @@ Log in to [my.wpengine.com](https://my.wpengine.com/). A Mangrove administrator 
 ## Environments
 On WPEngine, each site has one or more environments. Each of these is a complete WordPress install with a separate database and files. The production environment (PRD) hosts the live website, while the other environment(s) is(/are) used for development.
 
-![Annotated screenshot showing WPE environments](wpe-environments-annotated.png)
+![Annotated screenshot showing WPE environments](images/wpe-environments-annotated.png)
 
 ## Legacy Staging
 Before the current environments system, WPEngine had a "1-Click Staging" system. This is now a legacy system which we no longer use. Do not use the legacy staging system, but be aware that it still exists within WPEngine and be careful not to get it confused with the staging environment.

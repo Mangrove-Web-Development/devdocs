@@ -13,7 +13,7 @@ As of March 2020, new sites should be created on the `mangrove2017` WPEngine acc
 * The **Site Name**, not to be confused with an _install name_, can be changed later, and only needs to be unique on this account.
 * Check **Transferrable**, unless you're positive we won't want to move this site to a client-owned or other Mangrove account by launch time.
 
-![Screenshot of adding a site on WPEngine.](add-site.png)
+![Screenshot of adding a site on WPEngine.](images/add-site.png)
 
 ## Add Development Environment
 The site will need to be developed first, so start with the Development environment.
@@ -23,12 +23,12 @@ The site will need to be developed first, so start with the Development environm
 * Name the environment _sitenameyeardev_.
 * Copy from `mgtemplate - PROD`
 
-![Screenshot of adding terner2020dev environment.](add-development-environment.png)
+![Screenshot of adding terner2020dev environment.](images/add-development-environment.png)
 
 ## Set The Demo Password
 Once the Development Environment is finished building, you will be able to change password that protects the front-end from being publicly available. Change this to `mangrove`.
 
-![Screenshot of changing demo password.](demo-password.png)
+![Screenshot of changing demo password.](images/demo-password.png)
 
 ## Setup Git Repo
 ### Clone the Development Environment
@@ -37,7 +37,7 @@ Once the Development Environment is finished building, you will be able to chang
 * The cloned repo will be empty with no branches locally or on the remote `origin`.
 * Rename the remote `origin` to `dev` (since you cloned the development environment).
 
-![Screenshot of empty local repository with remote "dev".](cloned-repo.png)
+![Screenshot of empty local repository with remote "dev".](images/cloned-repo.png)
 
 ### Add The Starter Files
 Copy and commit these files/folders from MGTemplate:
@@ -70,12 +70,12 @@ Copy and commit these files/folders from MGTemplate:
 
 [^1]: The `_` in the theme name keeps it first in the list of installed themes.
 
-![Screenshot of renamed theme and file edits.](rename-edit-files.png)
+![Screenshot of renamed theme and file edits.](images/rename-edit-files.png)
 
 ### Push Master to Dev
 Push branch `master` to the remote `dev`. This will deploy the branch to WPEngine.
 
-![Screenshot of pushing branch "master" to remote "dev".](push-to-dev.png)
+![Screenshot of pushing branch "master" to remote "dev".](images/push-to-dev.png)
 
 ## Activate the New Theme
 Once your changes have deployed:
@@ -83,7 +83,7 @@ Once your changes have deployed:
 * Activate the new theme.
 * Delete any other themes installed in WordPress, including the template theme (called _Rename This Theme!_) if it is still there.
 
-![Screenshot with new theme, "Terner Center 2020", activated.](new-theme-active.png)
+![Screenshot with new theme, "Terner Center 2020", activated.](images/new-theme-active.png)
 
 ## Add To LastPass
 While still logged in to WP-Admin:

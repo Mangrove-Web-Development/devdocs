@@ -14,7 +14,7 @@ My WPEngine > Select environment > “SFTP Logins” > “Add SFTP user”
 * Password: click the lock icon to generate a secure password
 * Path: leave this field blank
 
-![Screenshot of adding an SFTP user.](wpe-add-sftp-user.png)
+![Screenshot of adding an SFTP user.](images/wpe-add-sftp-user.png)
 
 ## Add to LastPass
 * Click the LastPass icon in your browser
@@ -43,6 +43,6 @@ fi
 PORT=2222
 ```
 
-![Screenshot of how to add SFTP user in LastPass](lp-add-sftp-user.png)
+![Screenshot of how to add SFTP user in LastPass](images/lp-add-sftp-user.png)
 
 [^1]: If you don't have access to the client logins folder, you can put it in _Mangrove Team Internal (Limited) - for new devs_
