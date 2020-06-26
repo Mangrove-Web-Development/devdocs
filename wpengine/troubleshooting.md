@@ -3,6 +3,7 @@ nav_order: 10
 title: Troubleshooting
 has_children: false
 has_toc: false
+parent: WPEngine
 ---
 # WPE Troubleshooting
 
