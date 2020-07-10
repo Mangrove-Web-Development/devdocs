@@ -1,6 +1,8 @@
 ---
 nav_order: 6
 title: MGTemplate
+has_children: true
+has_toc: false
 ---
 # MGTemplate
 
