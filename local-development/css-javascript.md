@@ -53,3 +53,10 @@ For convenience, some commands have aliases that can be used interchangeably. E.
 - `develop`
     - Watches source SCSS and JavaScript files for changes and compiles for development.  
     When changes are detected, files are recompiled and the browser is automatically refreshed.
+
+## Next
+That should be about all you need to get started on your project!
+
+You might want to read about the [additional features](/local-development/features)
+available in the local development setup,
+or get a better understanding of [Docker and how it works](/docker/).

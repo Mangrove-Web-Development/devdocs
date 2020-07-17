@@ -13,7 +13,7 @@ To enter the Util container:
 ```bash
 docker-compose run util
 ```
-You command line is now within the Util container.
+Your command line is now within the Util container.
 To exit the container and return to your normal terminal,
 use the `exit` command.
 
@@ -30,7 +30,7 @@ download-db
 To work with the database,
 your local development services need to be running.
 
-At the root of your project directory:
+At the root of your project directory (not within the Util container):
 ```sh
 docker-compose up -d
 ```

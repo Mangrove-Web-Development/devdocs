@@ -18,3 +18,13 @@ Docker images are built from public repositories in the
 ## Update Docker Compose File
 Some projects may still have `rubidot/wp-util` in the `docker-compose.yml` file.
 This should be updated to `mangroveweb/wp-util`.
+
+## [WIP]
+Sorry! There's not much information here yet.
+
+Would like to add a section on terminology:
+
+- service
+- image
+- container
+- volume
