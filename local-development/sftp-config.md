@@ -35,4 +35,5 @@ Do not include spaces around the `=`.
 
 The password is in `'single quotes'` to avoid issues with special characters.
 
-Next step: [Start Local WordPress](/local-development/start-wordpress)
+## Next
+[Download the plugins and site data](sync).
