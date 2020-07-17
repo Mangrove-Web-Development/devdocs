@@ -1,6 +1,6 @@
 ---
 title: Local SSL
-parent: Local Development
+parent: More Features
 nav_order: 6
 ---
 

@@ -1,5 +1,6 @@
 ---
 nav_order: 5
+parent: Local Development
 title: More Features
 has_children: true
 has_toc: false
