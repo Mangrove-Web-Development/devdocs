@@ -1,7 +1,8 @@
 ---
 title: Local SSL
 parent: More Features
-nav_order: 6
+grand_parent: Local Development
+nav_order: 1
 ---
 
 # Local SSL
