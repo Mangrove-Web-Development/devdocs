@@ -9,6 +9,10 @@ nav_order: 4
 ## The Util Container
 The simplest way to sync down a site is with the command line tools in the Util container.
 
+**\*Note for Windows users**: Do *not* use the Cygwin command line.
+Cygwin does not have system access to run Docker correctly -
+use the standard Windows command line for all Docker commands.
+
 To enter the Util container:
 ```bash
 docker-compose run util
