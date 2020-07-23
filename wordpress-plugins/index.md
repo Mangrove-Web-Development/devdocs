@@ -1,4 +1,5 @@
 ---
+title: Plugins
 nav_order: 11
 ---
 # WordPress Plugins
