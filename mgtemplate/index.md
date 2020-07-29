@@ -6,16 +6,21 @@ has_toc: false
 ---
 # MGTemplate
 
-[WIP] This section is a work in progress. These are just some notes about what should be added.
+MGTemplate is the standard framework Mangrove uses for WordPress site development.
+It includes the [MGTemplate install](https://mgtemplate.wpengine.com) on WPEngine with
+a set of default settings and plugins to begin with, and
+the Git repository connected to that install, hosted by WPE, which tracks:
+- The `_mgstarter` starter theme.
+- The `mangrove-custom` plugin required for the theme to work.
+- The `mangrove-gutenberg` plugin for custom Gutenberg blocks.
+- The Docker-based local development setup.
 
-- This is the standard framework for all Mangrove sites.
-- Older sites may have an older setup that isn't up-to-date.
-- New sites will be setup by cloning this WPEngine install.
-- Includes Docker local development setup.
-- Tracks theme, mangrove plugin.
-- Doesn't track WordPress files.
-- How to edit CSS/JS
-
+## Older Sites
+MGTemplate is constantly getting improved and revised.
+Older projects may be based off older versions of this framework
+and therefore differ from the features and functionality documented here.
+Contact a senior developer or your project manager if your project is
+missing needed features or not working as expected.
 
 ## Theme Scripts
 All `*.js` files in the `js` directory of themes based on _mgstarter will have a corresponding output file in the `dist` directory. To use these scripts in WordPress, they must be registered, and then enqueued.
@@ -129,3 +134,9 @@ The background image in our hero building block uses a progressive loading effec
 Our grid system is a 12 column maximum system that utilizes two main elements: the `.grid` and the `.grid__column`. `.grid` is the wrapper element, with `.grid__column` elements nested directly inside. Varying widths and/or offests of the grid columns can be set using size and offset utility classes (`.u-size-XofY` and `.u-offset-XofY`). You can enable different widths and offsets at various breakpoints (set in `/sass/settings/_variables.scss`) using size class modifiers that match the breakpoint names set in the variables. 
 
 For example from a mobile-first perspective `.grid__column .u-size-1of2--md .u-size-1of3--lg`  would create a column that is 100% width until it hits the 'md' breakpoint, then 50% width until it hits the 'lg' breakpoint, and then 33.33% width on any screen widths larger than that. Default grid padding can be set in the same `variables.scss` file mentioned above. If grids with multiple padding sizes are required for your site design, you can add additional size modifiers in `/sass/components/_grid.scss`, for example `.grid--lg` within that file. as You can see this in action on our [styleguide](http://mgtemplate.wpengine.com/styleguide/).
+
+## [WIP]
+These are just some notes about what should be added.
+
+- New sites will be setup by cloning this WPEngine install.
+- How to edit CSS/JS
