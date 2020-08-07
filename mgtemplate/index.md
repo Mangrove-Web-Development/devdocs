@@ -65,7 +65,8 @@ function register_scripts() {
 [^1]: [WIP] Link to PHP abstract class explanation. [PHP Docs](https://www.php.net/manual/en/language.oop5.abstract.php)
 
 ### Webpack External Scripts
-Most dependency scripts will either be node modules managed with npm,
+Most dependency scripts will either be node modules managed with
+[yarn](/local-development/css-javascript),
 or custom scripts within the theme `js` directory.
 These can simply be included by using the `import` syntax in the main JavaScript files, and
 they will be included the the output bundles in `dist`.

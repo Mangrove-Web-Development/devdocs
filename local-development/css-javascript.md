@@ -12,6 +12,8 @@ Use the `node` container to compile these files.
 ## Source Files 
 JavaScript source files are found in the `theme/js` directory.
 
+By default, there is a `global.js` file that is enqueued for the entire site front-end. Any JavaScript for specific areas of the site should be added to new `.js` files in the `js` directory. These will automatically be detected by the compile commands (after you restart the command).
+
 [WIP] How to add more primary JS files.
 
 SCSS source files are found in the `theme/sass` directory.
@@ -23,25 +25,45 @@ Compiled CSS and JS files are output to the `theme/dist` directory. These _are_ 
 ## Node Container
 The node container opens a command line starting in your theme directory. This path is controlled by the `docker-compose.yml` file under `volumes:` ending with `:/theme`.
 
-By default, there is a `global.js` file that is enqueued for the entire site front-end. Any JavaScript for specific areas of the site should be added to new `.js` files in the `js` directory. These will automatically be detected by the compile commands (after you restart the command).
-
+To start the node container:
 ```sh
-docker-compose run --service-ports node # start the node container
-npm install # installs node modules
-npm run help # lists available commands
-exit # ( exit container )
+docker-compose run --service-ports node
 ```
 
+### yarn vs npm
+Node packages and scripts are managed using either the [yarn](https://yarnpkg.com)
+or [npm](https://www.npmjs.com) command line tools.
 
-## Node Container Commands
-Commands in the node container are node scripts which can be found in `package.json`. To run these commands, use the format:
+npm was used for older projects, but we have migrated to using yarn due to compatibility issues
+with npm and Windows.
 
+To see if a project is using yarn or npm, check for the package lock file.
+
+- yarn: `yarn.lock`
+- npm:  `package-lock.json`
+
+If a project is still using npm,
+you may continue using npm on that project,
+or update the project to use yarn:
+
+- Delete `package-lock.json`
+- Update `package.json` with yarn commands
+- Delete `node_modules`
+- `yarn install` and continue development with yarn.
+
+### Node Scripts
+Node scripts are defined in `package.json`.
+Run these scripts with:
 ```sh
-npm run commandname
+yarn run scriptname
+```
+or
+```sh
+npm run scriptname
 ```
 
-### Commands
-For convenience, some commands have aliases that can be used interchangeably. E.g. `npm run dev` and `npm run develop` do the same thing.
+For convenience, some scripts have aliases that can be used interchangeably.
+E.g. `yarn run dev` and `yarn run develop` do the same thing.
 
 
 - `build`
