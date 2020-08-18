@@ -56,13 +56,32 @@ E.g. `yarn run dev` and `yarn run develop` do the same thing.
 - `build`
 - `production`
     - Compiles SASS and JavaScript for production use. Run this command and commit output files before any production deploys.
-- `watch`
-    - Use this instead of `develop` if you are on Windows. Windows does not report file change like Mac and other Unix-like systems do, so polling is used instead for compatibility.
 - `dev`
 - `develop`
     - Watches source SCSS and JavaScript files for changes and compiles for development.  
     When changes are detected, files are recompiled and the browser is automatically refreshed.
+    - 
+- `watch`
+    - Use this instead of `develop` if you are on Windows. Windows does not report file change like Mac and other Unix-like systems do, so polling is used instead for compatibility.
 
+## Output Files
+Compiled CSS and JS files are output to the `theme/dist` directory.
+These _are_ tracked in Git, so they will appear as changed whenever they are recompiled.
+Commit these changes.
+
+Output file names include a _content hash_.
+This hash is based on the content of the file itself,
+so it only changes if the file content changes.
+This results in a unique URL based on the contents of the file,
+making sure that an old cached version will not be loaded,
+but the cache will not be invalidated unnecessarily.
+
+Make sure to commit the output files from the `production` script before deploying to a
+production site.
+The production output files are minimized, stripped of extra characters, and otherwise optimized
+for efficient performance in the production environment.
+Development files may not be minimized and may include extra code for source maps and other
+features useful in development.
 
 ## Source Files 
 JavaScript source files are found in the `theme/js` directory.
@@ -74,9 +93,6 @@ By default, there is a `global.js` file that is enqueued for the entire site fro
 SCSS source files are found in the `theme/sass` directory.
 
 [WIP] How to add more primary SCSS Files.
-## Output Files
-Compiled CSS and JS files are output to the `theme/dist` directory. These _are_ tracked in Git, so they will appear as changed whenever they are recompiled. Commit these changes.
-
 
 ## Next
 That should be about all you need to get started on your project!
