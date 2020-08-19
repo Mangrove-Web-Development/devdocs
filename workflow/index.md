@@ -10,6 +10,7 @@ has_toc: false
 ## Code Up, Content Down
 ### Applicable projects
 - This is standard. Use on ALL projects unless there are special circumstances.
+- If this is not being used on a project, document the used workflow in the site manual.
 
 ### Overview / Rules
 - This is the most common setup for the sites we are managing.
