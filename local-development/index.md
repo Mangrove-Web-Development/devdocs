@@ -1,5 +1,5 @@
 ---
-nav_order: 2
+nav_order: 25
 title: Local Development
 has_children: true
 has_toc: false

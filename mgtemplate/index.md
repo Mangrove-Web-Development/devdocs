@@ -1,5 +1,5 @@
 ---
-nav_order: 6
+nav_order: 30
 title: MGTemplate
 has_children: true
 has_toc: false
