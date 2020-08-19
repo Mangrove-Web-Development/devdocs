@@ -19,7 +19,7 @@ has_toc: false
 
 ### Process
 - Content is edited on Production.
-- Migrate DB Pro + Media Addon are used to sync content from Production to Staging and Dev.
+- Migrate DB Pro + Media Addon are used to sync content _from_ Production _to_ Staging and Dev.
 - Code is deployed via Git.
 - Code changes are developed locally and Git pushed to Dev.
 - When ready for review, git push to Staging.
@@ -51,6 +51,6 @@ has_toc: false
     - Git push to Staging when ready for client review.
     - Production Git repository is **not** used.
 - Deploying to Production
-    - Coordinate with all content editors and developers
+    - Coordinate with all developers and content editors
         to make sure Staging is prepared for deploy.
     - Deploy from Staging using WPE Copy Environment from Staging to Production.
