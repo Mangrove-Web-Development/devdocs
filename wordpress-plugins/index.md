@@ -1,6 +1,8 @@
 ---
 title: Plugins
 nav_order: 45
+has_children: true
+has_toc: false
 ---
 # WordPress Plugins
 
