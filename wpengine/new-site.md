@@ -8,6 +8,10 @@ nav_order: 3
 You will need billing or owner account access to do this.
 As of March 2020, new sites should be created on the `mangrove2017` WPEngine account. This will change in the future when we are closer to account limits.
 
+To begin, create a copy of the
+[Asana WP Setup Checklist](https://app.asana.com/0/49479446717542/16235914790820)
+and rename/reassign the copy to your project. 
+
 ## Add Site
 * Log into the WPEngine Dashboard, make sure you're looking at the `mangrove2017` account, and click "Add Site" in the top right corner.
 * The **Site Name**, not to be confused with an _install name_, can be changed later, and only needs to be unique on this account.
