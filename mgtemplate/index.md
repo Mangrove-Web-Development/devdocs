@@ -81,7 +81,7 @@ Otherwise, use `Script_Registry::register` or `wp_register_script`.
 Then, you can add it to the `$dependencies` array of the dependent scripts and
 `import` it as if it was a node module.
 
-E.g. jQuery [^1]
+E.g. jQuery [^2]
 ```js
 // webpack.config.js
 externals: {
@@ -98,7 +98,7 @@ Script_Registry::register( 'global' );
 import $ from 'jquery'
 
 ```
-[^1]: This is a somewhat contrived example.
+[^2]: This is a somewhat contrived example.
     jQuery is already registered by WordPress, so there is no need to register it again as shown in this example.
 
 ### Script Commons
