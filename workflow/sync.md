@@ -10,6 +10,7 @@ We have access to multiple tools for synchronizing files and data
 between separate WordPress installs, each with advantages and disadvantages.
 
 ## Migrate DB Pro + Media Addon
+See [plugin documentation](/wordpress-plugins/migrate-db-pro) for usage.
 ### Pros
 - This WordPress plugin can be used on virtually any WordPress install.
 - Can clone the whole database.
@@ -24,8 +25,8 @@ between separate WordPress installs, each with advantages and disadvantages.
 
 ## WPEngine Copy Environment
 ### Pros
-- Clones the entire database.
-- Can clone the complete WordPress install files,
+- Copies the entire database.
+- Can copy the complete WordPress install files,
     including plugins, theme, media and core files.
 
 ### Cons
@@ -33,7 +34,8 @@ between separate WordPress installs, each with advantages and disadvantages.
 - Cannot select specific tables to copy; completely overwrites destination database.
 - Cannot copy only media files; the entire destination install files are replaced.
 - Does not coordinate with environment Git repository,
-    which [can cause issues](/wpengine/troubleshooting).
+    which can cause issues.
+    You may need to [delete the dist folder](/wpengine/troubleshooting).
 
 ## WP-Util Container Scripts
 ### Pros
