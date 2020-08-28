@@ -9,6 +9,21 @@ Security headers not set by WPEngine are added by the theme.
 Find these in the `add_security_headers` function in `functions.php`.
 These headers are restrictive, so you may need to adjust them for your project.
 
+## Strict-Transport-Security
+The HTTP Strict-Transport-Security (HSTS) header enforces the use of HTTPS.
+**If your project domain or any subdomains require access via HTTP,
+read the [MDN docs][MDN HSTS] to understand this header.**
+
+A `preload` directive can be added to this header for better, more reliable security.
+However, this has long-term effects that are difficult to reverse,
+so it is not included by default,
+and should only be used after reading the documentation at [hstspreload.org][] and
+discussing this with the project manager and/or client.
+
+
+[MDN HSTS]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+[hstspreload.org]: https://hstspreload.org/
+
 ## Content-Security-Policy
 The Content-Security-Policy header controls what types of resources may be loaded on the page,
 and where they can be loaded from.
