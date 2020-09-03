@@ -9,6 +9,21 @@ parent: WPEngine
 WPEngine installs can send emails by default, and this usually just works.
 However, some configurations may have issues.
 
+## Microsoft Outlook/Exchange
+Microsoft Exchange servers[^exchange] commonly block emails sent by WPEngine,
+often without any trace of those emails for debugging.
+
+1. Make sure [SPF Records](#spf-record) are set correctly.
+1. Set [Exchange spam rules](#exchange-spam-rules).
+
+[^exchange]: Outlook is the end-user email client. Exchange is the email server.
+### Exchange Spam Rules
+Exchange Admin Center -> Mail Flow -> Rules
+- Add rule: From email address in question, set spam confidence to "Bypass Spam Filtering"
+
+Alternatively, it may work to add the address to the company-wide allow list.
+
+
 ## Server Sends To Itself
 When a server attempts to send an email to the domain it is serving,
 e.g. `mangrove-web.com` sends to an `@mangrove-web.com` address,
@@ -23,7 +38,7 @@ Check that this is set properly.
 
 ## SPF Record
 Technically, any email system can send an email "from" any address.
-Using this to make an email appear to come from a source other than it's actual source,
+Using this to make an email appear to come from a source other than it's actual source
 is called email spoofing.
 
 One protection against email spoofing is the SPF DNS record.
