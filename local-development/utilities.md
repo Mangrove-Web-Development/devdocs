@@ -11,6 +11,8 @@ To start a `util` container and access this command line*, run:
 docker-compose run util
 ```
 
+This service uses the [mangroveweb/wp-util](https://hub.docker.com/r/mangroveweb/wp-util) image.
+
 *_Note for Windows users_: Do **not** use the Cygwin command line.
 This can cause errors. Instead, use the standard Windows _cmd_ command line.
 
