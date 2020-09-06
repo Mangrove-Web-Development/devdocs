@@ -38,6 +38,9 @@ To reset the Administrator role to default capabilities,
 the WordPress core `populate_roles` function needs to be called once.
 Please note: running `populate_roles` may conflict with plugins that adjust roles and capabilities.
 
+If you would like to update a project with the new roles,
+copy over the relevant code and then reset the admin role and setup the developer role.
+
 ## Relevant Code
 All functions related to this feature are in `mangrove-custom.php`
 under `/* Roles and Capabilities */`.
@@ -51,3 +54,10 @@ carefully review the code adding those pages and the existing options fields
 to ensure there are no conflicts.
 All fields on all options pages are stored on the same options table,
 and therefore require unique field names.
+
+## Troubleshooting
+If you are having trouble accessing screens in WP-Admin,
+try resetting the roles by going to Options > Developer and Reset Admin Role,
+then Setup Developer Role.
+This may be necessary for WooCommerce to work properly.
+Make sure to backup the site before doing this!
