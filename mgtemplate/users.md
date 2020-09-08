@@ -61,3 +61,6 @@ try resetting the roles by going to Options > Developer and Reset Admin Role,
 then Setup Developer Role.
 This may be necessary for WooCommerce to work properly.
 Make sure to backup the site before doing this!
+
+Plugins may add custom capabilities which will need to be added to the code in
+`mangrove-custom.php`.
