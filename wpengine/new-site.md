@@ -70,6 +70,7 @@ Copy and commit these files/folders from MGTemplate:
     * Update line 39 in docker-compose.yml from  
     `- ./wp-content/themes/_mgstarter/:/theme` to  
     `- ./wp-content/themes/_yourthemename/:/theme`
+    * Update `output.publicPath` in `webpack.config.js`
 * Update `docker-compose/sftp-config` with the correct credentials.
 
 [^1]: The `_` in the theme name keeps it first in the list of installed themes.
