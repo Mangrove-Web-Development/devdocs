@@ -74,7 +74,7 @@ This hash is based on the content of the file itself,
 so it only changes if the file content changes.
 This results in a unique URL based on the contents of the file,
 making sure that an old cached version will not be loaded,
-but the cache will not be invalidated unnecessarily.
+but the cache will not be invalidated unnecessarily*.
 
 Make sure to commit the output files from the `production` script before deploying to a
 production site.
@@ -82,6 +82,15 @@ The production output files are minimized, stripped of extra characters, and oth
 for efficient performance in the production environment.
 Development files may not be minimized and may include extra code for source maps and other
 features useful in development.
+
+*Note: Old sites might not use hashed file names, and instead consistently use the same file name.
+In this case, you **must** change the version string in the
+[wp_register_script()](https://developer.wordpress.org/reference/functions/wp_register_script/)
+or
+[wp_register_style()](https://developer.wordpress.org/reference/functions/wp_register_style/)
+function call in `functions.php` in order to bust the cache.
+The content of the version string is not important,
+as long as it is different from the previous value.
 
 ## Source Files 
 JavaScript source files are found in the `theme/js` directory.
