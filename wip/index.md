@@ -8,5 +8,4 @@ Some notes for future work needed on this documentation. This is for editorial u
 ## Review Old Documentation
 We still have old documentation in various locations. These need to be reviewed, integrated into this documentation, and deleted.
 
-- [Local Setup Guide](https://docs.google.com/document/d/1YOfRb47vdRe48k8Wq5vpMYpQudLLsTL6kofS1SFX3j0/edit#heading=h.9ih63hm7igpd)
 - [Mangrove Local Development Setup](https://docs.google.com/document/d/1NG9CkcEwqnydR8jS7wu6kSaxJT_jGmcj-WVmzJGSsr4/edit#)
