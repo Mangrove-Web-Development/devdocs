@@ -11,10 +11,14 @@ To start a `util` container and access this command line*, run:
 docker-compose run util
 ```
 
-This service uses the [mangroveweb/wp-util](https://hub.docker.com/r/mangroveweb/wp-util) image.
 
-*_Note for Windows users_: Do **not** use the Cygwin command line.
-This can cause errors. Instead, use the standard Windows _cmd_ command line.
+
+## Important Notes
+*   For Windows users: Do **not** use the Cygwin command line.
+    This can cause errors. Instead, use the standard Windows _cmd_ command line.
+*   This service uses the [mangroveweb/wp-util](https://hub.docker.com/r/mangroveweb/wp-util) image.
+    Older sites may still be configured with the `rubidot/wputil` image.
+    These should be [upgraded to use the new image](#upgrade-util).
 
 ## WP-CLI
 The complete WP-CLI command line interface for WordPress is available within this container.
@@ -81,3 +85,12 @@ you can use these scripts to set default values and skip the in-browser install 
 wp-init
 multisite-init
 ```
+
+## Upgrade Util
+If you're working on a project that is still configured with the old `rubidot/wputil` image,
+you should upgrade the configuration to use the `mangroveweb/wp-util` image.
+
+*   Open `docker-compose.yml` and find the `util:` service.
+*   Delete all files listed under `volumes:` in this service, except `sftp-config`.
+*   In `docker-compose.yml`, replace the old `util:` service configuration with the current
+    configuration in the MGTemplate `docker-compose.yml` file.
