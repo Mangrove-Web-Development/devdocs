@@ -31,10 +31,9 @@ it might not check the DNS records at all, and just send the email to itself.
 WPEngine is configured by default not to receive emails, so this is not a likely issue on WPE.
 
 ## MX Record
-Since DNS is configured for WPE to handle web traffic,
-a separate DNS record must be set for the email traffic.
-This is the MX record.
-Check that this is set properly.
+MX records must be set to identify the host(s) emails should be sent to.
+Email services will provide the correct values for your MX records;
+check that these are set properly.
 
 ## SPF Record
 Technically, any email system can send an email "from" any address.
@@ -69,20 +68,20 @@ Microsoft (Outlook) [recommends](https://docs.microsoft.com/en-us/microsoft-365/
 using the `-a` hard fail option.
 This offers more more confidence in the legitimacy of emails, however,
 the discarding of failed emails can make debugging configuration issues more difficult.
-I recommend using the `~a` Softfail option, as recommended other services,
+I recommend using the `~a` Softfail option, as recommended by other services,
 to avoid these debugging issues.[^1]
 
 
 ### Example SPF Record
-WPEngine uses SendGrid and Mailgun to send emails,
-so, for WPE, `include ` SendGrid and Mailgun.[^2]
+WPEngine uses MailChannels to send emails,
+so, for WPE, `include ` MailChannels.[^2]
 
 - Record Type: `TXT`
 - Name: `@`
-- Value: `v=spf1 include:sendgrid.net include:mailgun.org ~all`
+- Value: `v=spf1 include:relay.mailchannels.net ~all`
 
 To include Outlook:
-- Value: `v=spf1 include:spf.protection.outlook.com include:sendgrid.net include:mailgun.org ~all`
+- Value: `v=spf1 include:spf.protection.outlook.com include:relay.mailchannels.net ~all`
 
 ### SPF Validator
 Validate your SPF records with the [SPF Record Checker](https://www.dmarcanalyzer.com/spf/checker/).
