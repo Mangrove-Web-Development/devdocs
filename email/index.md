@@ -1,8 +1,7 @@
 ---
-nav_order: 4
+nav_order: 23
 title: Email
 has_toc: false
-parent: WPEngine
 ---
 
 # Email Troubleshooting
