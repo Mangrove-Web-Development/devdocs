@@ -4,27 +4,4 @@ title: Using Git
 ---
 # Using Git
 
-Git can be very confusing, so feel free to ask other devs about it when something doesn't make sense.
-
-## Merging Code
-Code should be merged using the `git merge` feature. Merging can often be a
-confusing procedure, so using the merge open in Git GUI software can be helpful.
-
-Do not copy changes from one branch and commit them on another separately. This
-makes it look like the codebases are different when they are not, which makes
-it hard to understand the status of a project.
-
-## Git Ignore
-Instead of ignoring files and folders specifically, newer projects ignore everything, and then you must unignore your project folders.  This helps avoid accidentally adding non-project files to the repository.
-
-To unignore a directory, you prepend the line in .gitingore with a `!`.  However, if the parent directory is ignored, this will not work, so you must unignore all ancestor directories as well, and ignore all the other directories in the ancestors.
-
-```
-/*                              # ignore all files and folders in the repo directory
-
-!/wp-content                    # unignore /wp-content directory
-/wp-content/*                   # ignore all files/folders in /wp-content
-!/wp-content/themes             # unignore themes directory
-/wp-content/themes/*            # ignore all themes
-!/wp-content/themes/your-theme  # unignore your theme
-```
+This documentation has been moved to [Notion](https://www.notion.so/Git-9234ce624b9f454292f8cf2362bb8b42).

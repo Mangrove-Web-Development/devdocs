@@ -8,6 +8,4 @@ has_toc: false
 
 # Local Development Features
 
-- [Local SSL](local-ssl)
-- [Util Container](https://hub.docker.com/r/mangroveweb/wp-util)
-- [XDebug](https://hub.docker.com/r/mangroveweb/wp-local)
+This documentation has been moved to [Notion](https://www.notion.so/Additional-Features-e3de76ebf4724359be90187969585534).
